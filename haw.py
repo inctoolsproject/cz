@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import PUY
-from PUY.lib.curve.ttypes import *
+import CZ
+from CZ.lib.curve.ttypes import *
 from datetime import datetime
 import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
 from bs4 import BeautifulSoup
@@ -9,15 +9,15 @@ from urllib import urlopen
 import requests
 from io import StringIO
 from threading import Thread
-#from gtts import gTTS
+from gtts import gTTS
 from googletrans import Translator
 #JANGAN LUPA =>  sudo pip install bs4 => sudo pip install BeautifulSoup => sudo pip install urllib
 
-cl = PUY.LINE()
+cl = CZ.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-print "\n[CIE BERHASIL LOGIN]"
+print "\n[LOGIN]"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
